@@ -1,1 +1,1 @@
-from solvers import *
+from stoolpy.solvers import *

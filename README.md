@@ -30,11 +30,23 @@
 > scss
 > 
 > ```
-> from stoolpy import solvers
+> from stoolpy import solve_to, euler_step
+> import numpy as np
+>
+> def f(t, X):
+>   x, y = X
+> return np.array([y, -x])
+>
+> x0 = [1.0, 1.0]
+> t0, t1 = [0, 10]
+> dt = 1e-3
+> dt_max = 1e-2
+>
+> t, Xsol = solve_to(f, x0, t0, t1, dt, dt_max, step_func=euler_step)
 > 
-> result = solve_to(f
-> 
-> print(result)
+> plt.plot(t, Xsol, label="ODE Solution")
+> plt.legend()
+> plt.show()
 > ```
 > 
 > Contributing

@@ -4,7 +4,7 @@ import os
 
 
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DESCRIPTION = 'A Scientific Computing Toolbox package'
 LONG_DESCRIPTION = 'A package that allows to compute, model and analyse scientific tasks with the use of numerical methods and visualizers.'
 
